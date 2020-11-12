@@ -63,9 +63,8 @@ int main(int argc, char **argv)
     struct Message message;
     for (int j=0; j < 10000; j++)
     {
-        message.chunk_num++;
+        message.chunk_num = j;
         message.number = send_array[j];
-
         sendto(server_socket, &message, sizeof(message), 0, (struct sockaddr*)&client_addr, sock_len);
     }
     printf("Server has completed sending messages.\n");
