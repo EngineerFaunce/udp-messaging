@@ -13,8 +13,8 @@
 
 #define TCP_PORT        45210
 #define UDP_PORT        45211
-#define SERVER_IP       "130.111.46.105"
-#define CLIENT_IP       "172.29.34.6"
+#define SERVER_IP       "1.1.1.1"
+#define CLIENT_IP       "2.2.2.2"
 
 /* 
  * Message
