@@ -6,8 +6,8 @@ CFLAGS = -std=c99 -g
 
 all:
 	@echo "Compiling server and client code..."
-	$(CC) $(CFLAGS) server.c -o server
-	$(CC) $(CFLAGS) client.c -o client
+	$(CC) $(CFLAGS) server.c -o server -lpthread
+	$(CC) $(CFLAGS) client.c -o client -lpthread
 	@echo "Done! Copy the compiled files to their respective machines."
 
 clean:
